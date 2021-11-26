@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="background">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/backgroundofapp</item>
+    </style>
+
+    <style name="text">
+        <item name="android:fontFamily">@font/ubuntu</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textRegular" parent="@android:style/Theme.DeviceDefault">
+        <item name="editTextStyle">@style/EditTextOverride</item>
+        <item name="android:editTextStyle">@style/EditTextOverride</item>
+    </style>
+
+    <style name="EditTextOverride" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:textColorHint">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="headLine" parent="text">
+        <item name="android:textColorLink">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="hintText" parent="text">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="infoText" parent="text">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

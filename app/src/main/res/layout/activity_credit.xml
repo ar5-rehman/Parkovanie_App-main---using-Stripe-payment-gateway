@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            style="@style/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_background_parking_app" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/barrier"
+            app:srcCompat="@drawable/second_background" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buyCredit10Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="25dp"
+            android:foreground="@drawable/ic_shoppingcart"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buyCredit20Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:foreground="@drawable/ic_shoppingcart"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/barrier"
+            app:layout_constraintEnd_toEndOf="@+id/buyCredit15Btn"
+            app:layout_constraintTop_toBottomOf="@+id/buyCredit15Btn" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buyCredit15Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/buyCredit10Btn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/buyCredit10Btn"
+            app:layout_constraintTop_toBottomOf="@+id/buyCredit10Btn"
+            android:foreground="@drawable/ic_shoppingcart" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cena :"
+            app:layout_constraintBottom_toBottomOf="@+id/buyCredit15Btn"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toTopOf="@+id/buyCredit15Btn" />
+
+        <TextView
+            android:id="@+id/textView15"
+            style="@style/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cena :"
+            app:layout_constraintBottom_toBottomOf="@+id/buyCredit20Btn"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/buyCredit20Btn" />
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Cena :"
+            app:layout_constraintBottom_toBottomOf="@+id/buyCredit10Btn"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/buyCredit10Btn" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/buyCredit15Btn"
+            app:layout_constraintEnd_toEndOf="@+id/buyCredit10Btn"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/buyCredit10Btn"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/buyCredit20Btn"
+            app:layout_constraintEnd_toEndOf="@+id/buyCredit15Btn"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/buyCredit15Btn"
+            app:srcCompat="@drawable/line" />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10€"
+            app:layout_constraintBottom_toBottomOf="@+id/textView16"
+            app:layout_constraintEnd_toStartOf="@+id/buyCredit10Btn"
+            app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15€"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toStartOf="@+id/buyCredit15Btn"
+            app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView19"
+            style="@style/infoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20€"
+            app:layout_constraintEnd_toStartOf="@+id/buyCredit20Btn"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="50dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="buyCredit20Btn"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="532dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

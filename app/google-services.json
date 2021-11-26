@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "891253840421",
+    "project_id": "parking-ce76e",
+    "storage_bucket": "parking-ce76e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891253840421:android:49b64a1444fe070db0fdcc",
+        "android_client_info": {
+          "package_name": "sk.jojo.parkovanie_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891253840421-a80dud7skskappt9qpbkgup0j6dqg939.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sk.jojo.parkovanie_app",
+            "certificate_hash": "a3415d5ab100099950e7890ef52906e341054612"
+          }
+        },
+        {
+          "client_id": "891253840421-n919qjjrivrrvm9ns0tks792n9odn7rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcmhDuUfoXkhrnpfL__QYUbfMDthSJhpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891253840421-n919qjjrivrrvm9ns0tks792n9odn7rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

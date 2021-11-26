@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MoreFragment" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            style="@style/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_background_parking_app" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/second_background"
+            app:layout_constraintBottom_toBottomOf="@+id/aboutBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profileBtn" />
+
+        <TextView
+            android:id="@+id/profileBtn"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:paddingTop="20dp"
+            android:clickable="true"
+            android:text="Profil"
+            android:textAlignment="textStart"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/settingsBtn"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:text="Nastavenia"
+            android:textAlignment="textStart"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/profileBtn"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/aboutBtn"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="20dp"
+            android:clickable="true"
+            android:text="O aplikácii"
+            android:textAlignment="textStart"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/settingsBtn"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_settings"
+            app:layout_constraintBottom_toBottomOf="@+id/settingsBtn"
+            app:layout_constraintStart_toStartOf="@+id/imageView14" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_info"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/aboutBtn" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="@+id/profileBtn"
+            app:layout_constraintStart_toStartOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/line"
+            app:layout_constraintBottom_toTopOf="@+id/settingsBtn"
+            app:layout_constraintEnd_toEndOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/profileBtn" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/line"
+            app:layout_constraintBottom_toTopOf="@+id/aboutBtn"
+            app:layout_constraintEnd_toEndOf="@+id/imageView19"
+            app:layout_constraintStart_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toBottomOf="@+id/settingsBtn" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintBottom_toBottomOf="@+id/profileBtn"
+            app:layout_constraintEnd_toEndOf="@+id/imageView8" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintBottom_toBottomOf="@+id/settingsBtn"
+            app:layout_constraintEnd_toEndOf="@+id/imageView17" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/aboutBtn" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/barrier"
+            app:layout_constraintTop_toTopOf="@+id/logoutBtn"
+            app:srcCompat="@drawable/second_background" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/logoutBtn"
+            app:layout_constraintStart_toStartOf="@+id/imageView22"
+            app:srcCompat="@drawable/ic_logout" />
+
+        <TextView
+            android:id="@+id/logoutBtn"
+            style="@style/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="100dp"
+            android:paddingTop="25dp"
+            android:text="Odhlásiť sa"
+            android:textAlignment="textStart"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView22"
+            app:layout_constraintStart_toEndOf="@+id/imageView23" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:barrierMargin="25dp"
+            app:constraint_referenced_ids="logoutBtn"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="555dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

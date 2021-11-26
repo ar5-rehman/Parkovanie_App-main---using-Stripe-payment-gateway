@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="sk.jojo.parkovanie_app.view_model.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.BuyingTicketFragment" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            style="@style/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_background_parking_app" />
+
+        <TextView
+            android:id="@+id/balanceHeadLine"
+            style="@style/headLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/tvoj_aktu_lny_zostatok"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0.00$"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balanceHeadLine" />
+
+        <TextView
+            android:id="@+id/numberOfParkingHeadLine"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Zadaj číslo parkovacieho miesta"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/depositeMoneyBtn" />
+
+        <EditText
+            android:id="@+id/numberOfParking"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="Parkovacie číslo"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#FF03DAC5"
+            android:textColorHint="#54FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfParkingHeadLine" />
+
+
+
+        <Button
+            android:id="@+id/depositeMoneyBtn"
+            style="@style/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/color_actionbutton"
+            android:text="Doplniť peniazie"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balance" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberOfParking">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/second_background" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/buyingBtn30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ic_shoppingcart"
+                app:layout_constraintBottom_toBottomOf="@+id/price30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/priceHead50" />
+
+            <TextView
+                android:id="@+id/minHead30"
+                style="@style/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Minúty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/min30"
+                style="@style/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="30"
+                app:layout_constraintBottom_toTopOf="@+id/barrier30"
+                app:layout_constraintEnd_toEndOf="@+id/minHead30"
+                app:layout_constraintStart_toStartOf="@+id/minHead30"
+                app:layout_constraintTop_toBottomOf="@+id/minHead30" />
+
+            <TextView
+                android:id="@+id/priceHead50"
+                style="@style/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena"
+                app:layout_constraintBaseline_toBaselineOf="@+id/minHead30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/price30"
+                style="@style/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/price30"
+                app:layout_constraintEnd_toEndOf="@+id/priceHead50"
+                app:layout_constraintStart_toStartOf="@+id/priceHead50"
+                app:layout_constraintTop_toBottomOf="@+id/priceHead50" />
+
+            <TextView
+                android:id="@+id/minHead45"
+                style="@style/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Minúty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/min30" />
+
+            <TextView
+                android:id="@+id/min45"
+                style="@style/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="45"
+                app:layout_constraintBottom_toTopOf="@+id/barrier45"
+                app:layout_constraintEnd_toEndOf="@+id/minHead45"
+                app:layout_constraintStart_toStartOf="@+id/minHead45"
+                app:layout_constraintTop_toBottomOf="@+id/minHead45" />
+
+            <TextView
+                android:id="@+id/priceHead75"
+                style="@style/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/minHead45" />
+
+            <TextView
+                android:id="@+id/price45"
+                style="@style/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/price45"
+                app:layout_constraintEnd_toEndOf="@+id/priceHead75"
+                app:layout_constraintStart_toStartOf="@+id/priceHead75"
+                app:layout_constraintTop_toBottomOf="@+id/priceHead75" />
+
+            <TextView
+                android:id="@+id/minHead60"
+                style="@style/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Minúty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/min45" />
+
+            <TextView
+                android:id="@+id/min60"
+                style="@style/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="60"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/minHead60"
+                app:layout_constraintStart_toStartOf="@+id/minHead60"
+                app:layout_constraintTop_toBottomOf="@+id/minHead60" />
+
+            <TextView
+                android:id="@+id/priceHead100"
+                style="@style/hintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cena"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/minHead60" />
+
+            <TextView
+                android:id="@+id/price60"
+                style="@style/infoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/price60"
+                app:layout_constraintEnd_toEndOf="@+id/priceHead100"
+                app:layout_constraintStart_toStartOf="@+id/priceHead100"
+                app:layout_constraintTop_toBottomOf="@+id/priceHead100" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/buyingBtn45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:foreground="@drawable/ic_shoppingcart"
+                app:layout_constraintBottom_toBottomOf="@+id/price45"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/priceHead75" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/buyingBtn60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:clickable="true"
+                android:foreground="@drawable/ic_shoppingcart"
+                app:layout_constraintBottom_toBottomOf="@+id/price60"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/priceHead100" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/priceHead75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price30"
+                app:srcCompat="@drawable/line" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/priceHead100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price45"
+                app:srcCompat="@drawable/line" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="min45"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="700dp" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="min30"
+                tools:layout_editor_absoluteX="229dp"
+                tools:layout_editor_absoluteY="105dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

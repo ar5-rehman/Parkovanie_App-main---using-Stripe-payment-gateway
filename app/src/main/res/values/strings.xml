@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Parkovanie_App</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoiajBobm55ayIsImEiOiJja29yZnA4NmsxNGxuMm9zajZmc3M1YnhhIn0.4W_1LQSZ-NW3Pj6nZQzaWw</string>
+    <string name="backgroundofapp">backgroundOfApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tvoj_aktu_lny_zostatok">Tvoj aktuálny zostatok</string>
+    <string name="time_left">%s</string>
+    <string name="price30">%s€</string>
+    <string name="price45">%s€</string>
+    <string name="price60">%s€</string>
+
+
+    <string name="move_map_instruction">Move map to place\nmarker at desired location</string>
+    <string name="location_picker_select_location_button_cancel">Cancel</string>
+    <string name="location_picker_select_location_button_select">Select a location</string>
+    <string name="user_location_permission_explanation">This app needs location permissions in order to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="location_picker_place_name_result">Place name: %1$s</string>
+    <string name="location_picker_dropped_marker_snippet_no_results">No results</string>
+    <string name="capital">Capital: %1$s</string>
+    <string name="tap_on_marker_instruction">Tap on a marker</string>
+    <string name="clicked_symbol_toast">Symbol clicked</string>
+    <string name="long_clicked_symbol_toast">Symbol long clicked</string>
+    <string name="symbol_listener_instruction_toast">Tap, tap and hold, or tap and drag the icon</string>
+
+
+
+
+</resources>

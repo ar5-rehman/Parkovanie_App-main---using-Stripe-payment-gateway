@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buyingnavigation"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="sk.jojo.parkovanie_app.ui.MainPageFragment"
+        android:label="MainPageFragment" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_buyingTicketFragment"
+            app:destination="@id/buyingTicketFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyingTicketFragment"
+        android:name="sk.jojo.parkovanie_app.ui.BuyingTicketFragment"
+        android:label="fragment_buying_ticket"
+        tools:layout="@layout/fragment_buying_ticket" >
+        <action
+            android:id="@+id/action_buyingTicketFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+        <action
+            android:id="@+id/action_buyingTicketFragment_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="sk.jojo.parkovanie_app.ui.MoreFragment"
+        android:label="MoreFragment" />
+    <fragment
+        android:id="@+id/secondBuyingTicketFragment"
+        android:name="sk.jojo.parkovanie_app.ui.SecondBuyingTicketFragment"
+        android:label="SecondBuyingTicketFragment" >
+        <action
+            android:id="@+id/action_secondBuyingTicketFragment_to_mainPageFragment"
+            app:destination="@id/mainPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="sk.jojo.parkovanie_app.ui.MapFragment"
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/action_mapFragment_to_buyingTicketFragment"
+            app:destination="@id/buyingTicketFragment" />
+        <action
+            android:id="@+id/action_mapFragment_to_secondBuyingTicketFragment"
+            app:destination="@id/secondBuyingTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment2"
+        android:name="sk.jojo.parkovanie_app.ui.MapFragment2"
+        android:label="MapFragment2" />
+    <activity
+        android:id="@+id/locationPickerActivity"
+        android:name="sk.jojo.parkovanie_app.LocationPickerActivity"
+        android:label="LocationPickerActivity" />
+    <activity
+        android:id="@+id/creditActivity"
+        android:name="sk.jojo.parkovanie_app.credit.CreditActivity"
+        android:label="CreditActivity" />
+</navigation>

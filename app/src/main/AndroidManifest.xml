@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sk.jojo.parkovanie_app">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Parkovanie_App">
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+
+        <activity
+            android:name=".credit.CheckoutActivity"
+            android:label="Card"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationPickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoWindowSymbolLayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SymbolListenerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".credit.CreditActivity"
+            android:screenOrientation="portrait" />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>
